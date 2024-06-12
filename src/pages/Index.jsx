@@ -1,6 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
 import { Box, Button, HStack } from "@chakra-ui/react";
-import { SketchPicker } from "react-color";
 
 const Index = () => {
   const canvasRef = useRef(null);
@@ -40,6 +39,7 @@ const Index = () => {
     setIsDrawing(false);
   };
 
+  // Removed SketchPicker related code
   const mondrianColors = ["#000000", "#FF0000", "#FFFF00", "#0000FF", "#FFFFFF"];
 
   return (
